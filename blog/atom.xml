@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://isoblue.org/blog</id>
+    <title>ISOBlue 2.0 Blog</title>
+    <updated>2018-02-16T06:00:00Z</updated>
+    <generator>Feed for Node.js</generator>
+    <link rel="alternate" href="https://isoblue.org/blog"/>
+    <subtitle>The best place to stay up-to-date with the latest ISOBlue 2.0 news and events.</subtitle>
+    <logo>https://isoblue.orgimg/oats_logo.png</logo>
+    <rights>Copyright © 2018Open Agricultural Systems Group</rights>
+    <entry>
+        <title type="html"><![CDATA[New ISOBlue Site]]></title>
+        <id>https://isoblue.org/blog/2018/02/16/new-site.html</id>
+        <link href="https://isoblue.org/blog/2018/02/16/new-site.html">
+        </link>
+        <updated>2018-02-16T06:00:00Z</updated>
+        <summary type="html"><![CDATA[
+As you could see, we have made some renovations to the ISOBlue website. Projects
+like ISOBlue is constantly changing and adapting to the newest and hotest
+trends in open-source community in terms of Cloud architecture tools, build
+tools, hardware, etc. It will be helpful for both you and us to get informed
+with the latest status of ISOBlue.
+
+]]></summary>
+        <author>
+            <name>Yang Wang</name>
+            <uri>https://github.com/wang701</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CANdroid During a Manure Spreading Session]]></title>
+        <id>https://isoblue.org/blog/2016/04/14/CANdroid-manure.html</id>
+        <link href="https://isoblue.org/blog/2016/04/14/CANdroid-manure.html">
+        </link>
+        <updated>2016-04-14T06:00:00Z</updated>
+        <summary type="html"><![CDATA[
+We utilized CANdroid to collect ISOBUS data during a manure spreading session.
+The session lasted for about 2 hours with a total of 6 passes of manure
+spreading in the field.
+
+]]></summary>
+        <author>
+            <name>Yang Wang</name>
+            <uri>https://github.com/wang701</uri>
+        </author>
+    </entry>
+</feed>

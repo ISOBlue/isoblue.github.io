@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>ISOBlue 2.0 Blog</title>
+        <link>https://isoblue.org/blog</link>
+        <description>The best place to stay up-to-date with the latest ISOBlue 2.0 news and events.</description>
+        <lastBuildDate>Fri, 16 Feb 2018 06:00:00 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>Feed for Node.js</generator>
+        <image>
+            <title>ISOBlue 2.0 Blog</title>
+            <url>https://isoblue.orgimg/oats_logo.png</url>
+            <link>https://isoblue.org/blog</link>
+        </image>
+        <copyright>Copyright © 2018Open Agricultural Systems Group</copyright>
+        <item>
+            <title><![CDATA[New ISOBlue Site]]></title>
+            <link>https://isoblue.org/blog/2018/02/16/new-site.html</link>
+            <guid>https://isoblue.org/blog/2018/02/16/new-site.html</guid>
+            <pubDate>Fri, 16 Feb 2018 06:00:00 GMT</pubDate>
+            <description><![CDATA[
+As you could see, we have made some renovations to the ISOBlue website. Projects
+like ISOBlue is constantly changing and adapting to the newest and hotest
+trends in open-source community in terms of Cloud architecture tools, build
+tools, hardware, etc. It will be helpful for both you and us to get informed
+with the latest status of ISOBlue.
+
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[CANdroid During a Manure Spreading Session]]></title>
+            <link>https://isoblue.org/blog/2016/04/14/CANdroid-manure.html</link>
+            <guid>https://isoblue.org/blog/2016/04/14/CANdroid-manure.html</guid>
+            <pubDate>Thu, 14 Apr 2016 06:00:00 GMT</pubDate>
+            <description><![CDATA[
+We utilized CANdroid to collect ISOBUS data during a manure spreading session.
+The session lasted for about 2 hours with a total of 6 passes of manure
+spreading in the field.
+
+]]></description>
+        </item>
+    </channel>
+</rss>
