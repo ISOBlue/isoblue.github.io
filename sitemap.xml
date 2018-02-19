@@ -3,6 +3,7 @@
 <url> <loc>https://isoblue.org/help.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://isoblue.org/en/help.html" /> </url>
 <url> <loc>https://isoblue.org/index.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://isoblue.org/en/index.html" /> </url>
 <url> <loc>https://isoblue.org/users.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://isoblue.org/en/users.html" /> </url>
+<url> <loc>https://isoblue.org/blog/2018/02/19/antenna-issue.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://isoblue.org/blog/2018/02/16/new-site.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://isoblue.org/blog/2016/04/14/CANdroid-manure.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://isoblue.org/docs/background.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://isoblue.org/docs/background.html" /> </url>
