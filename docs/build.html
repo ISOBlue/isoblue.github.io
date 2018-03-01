@@ -5,15 +5,16 @@
             nav.classList.toggle('docsSliderActive');
           };
         </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1>Build Instructions</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" name="prerequisites"></a><a href="#prerequisites" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Prerequisites</h2>
-<p>Since the building process is very customizable, if you do not have similar
-experience, it is recommended that you read through some of the <a href="http://www.yoctoproject.org/docs/2.4.1/mega-manual/mega-manual.html">Yocto project
-documentations</a> to get started. If you do not have much experience in Linux,
-you can still download a <a href="https://drive.google.com/open?id=0B6AeE6Ne4z3aX0VFXzRVWGNSRjQ">prebuilt ISOBlue image</a> and follow the <a href="/docs/flashing.html">flashing
-instructions</a> to get yourself an ISOBlue.</p>
+<p>The building process for ISOBlue 2,0 is very customizable. If you do not have
+similar experience, it is recommended that you read through some of the <a href="http://www.yoctoproject.org/docs/2.4.1/mega-manual/mega-manual.html">Yocto
+project documentations</a> to get started. If you do not have much experience in
+Linux, you can still download a <a href="https://drive.google.com/open?id=0B6AeE6Ne4z3aX0VFXzRVWGNSRjQ">prebuilt ISOBlue image</a> and follow the
+<a href="/docs/flashing.html">flashing instructions</a> to get yourself an ISOBlue.</p>
 <h3><a class="anchor" aria-hidden="true" name="machine-requirement"></a><a href="#machine-requirement" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Machine Requirement</h3>
 <p>For building an ISOBlue image, a powerful, multi-core host machine is highly
-recommended. There should be a minimum of 60GB of free disk place and 4GB of
-RAM. The build procedure is currently only tested on Ubuntu 16.10.</p>
+recommended. There should be a minimum of 60GB of free disk place, 4GB of RAM
+and a decent Internet connection. The build procedure is currently only tested
+on Ubuntu 16.10.</p>
 <!--truncate-->
 <h3><a class="anchor" aria-hidden="true" name="preparations"></a><a href="#preparations" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Preparations</h3>
 <p>ISOBlue's image (which added a bunch of custom recipes on top of Toradex BSP)
@@ -29,14 +30,14 @@ texinfo chrpath
 
 cd /usr/<span class="hljs-class"><span class="hljs-keyword">lib</span>;</span> sudo ln -s libcrypto++.so.<span class="hljs-number">9.0</span>.<span class="hljs-number">0</span> libcryptopp.so.<span class="hljs-number">6</span>
 </code></pre>
-<p>We would also need to install <a href="https://source.android.com/setup/using-repo">repo</a>:</p>
+<p>We would also need to install <a href="https://source.android.com/setup/using-repo">repo</a> for source synnchronizations:</p>
 <pre><code class="hljs">sudo apt-<span class="hljs-builtin-name">get</span> install repo
 </code></pre>
 <h3><a class="anchor" aria-hidden="true" name="source-synchronization"></a><a href="#source-synchronization" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Source Synchronization</h3>
 <p>You need to simply do:</p>
 <pre><code class="hljs"><span class="hljs-built_in">mkdir</span> isoblue-core
 <span class="hljs-keyword">cd</span> isoblue-core
-repo init -<span class="hljs-keyword">u</span> http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/ISOBlue/isoblue-image -<span class="hljs-keyword">b</span> isoblueImage
+repo init -<span class="hljs-keyword">u</span> http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/ISOBlue/isoblue-image -<span class="hljs-keyword">b</span> master
 repo <span class="hljs-keyword">sync</span>
 </code></pre>
 <p>After getting the ISOBlue image source, you can do:</p>
@@ -49,12 +50,25 @@ following items configured for the <strong>current</strong> session:</p>
 <li>shell environment variables</li>
 </ul>
 <p>You will need to source <code>export</code> again to have the right configurations.</p>
+<h3><a class="anchor" aria-hidden="true" name="editing-isoblueconf"></a><a href="#editing-isoblueconf" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Editing isoblue.conf</h3>
+<p>Before building the image, edit <code>isoblue.conf</code> under <code>top-level-directory</code>,
+i.e., <code>isoblue-core</code> in our instruction:</p>
+<p>The settings you need to change is the <code>ID</code> and <code>MACHINEID</code>.</p>
+<ul>
+<li>For <code>ID</code>, please set your <code>ID</code> to be 5 or greater for now as we already have 5
+of them built and any id that is less than 5 will cause some grief on our end
+(see <a href="/docs/howitworks.html">How ISOBlue 2.0 Works?</a>). This is only a temporary solution
+and will get changed in the future.</li>
+<li>For <code>MACHINEID</code>, you can append a string of your choice to the configured <code>ID</code>.
+The string can only contain letters.</li>
+</ul>
 <h2><a class="anchor" aria-hidden="true" name="building"></a><a href="#building" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Building</h2>
 <p>Given that you are in the <code>build</code> directory, run:</p>
-<pre><code class="hljs">bitbake console-isoblue-<span class="hljs-built_in">image</span>
+<pre><code class="hljs"><span class="hljs-function"><span class="hljs-title">bitbake</span></span> -r ../isoblue.conf console-isoblue-image
 </code></pre>
-<p>This first build usually takes of hours (it involves a lot of downloading and
-compiling). <strong>Be patient!</strong></p>
+<p>This command reads in the configuration you set in the <code>isoblue.conf</code> earlier
+and use the settings to build an image. This first build usually takes of hours
+(it involves a lot of downloading and compiling). <strong>Be patient!</strong></p>
 <p>After a successful build, you should have the following
 directory structure for for your <code>deploy</code> directory:</p>
 <pre><code class="hljs">isoblue-oe
