@@ -4,7 +4,7 @@
         <title>ISOBlue 2.0 Blog</title>
         <link>https://isoblue.org/blog</link>
         <description>The best place to stay up-to-date with the latest ISOBlue 2.0 news and events.</description>
-        <lastBuildDate>Mon, 19 Feb 2018 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 04 Apr 2018 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,16 @@
             <link>https://isoblue.org/blog</link>
         </image>
         <copyright>Copyright © 2018Open Agricultural Systems Group</copyright>
+        <item>
+            <title><![CDATA[DPAC Experiment]]></title>
+            <link>https://isoblue.org/blog/2018/04/04/dpac.html</link>
+            <guid>https://isoblue.org/blog/2018/04/04/dpac.html</guid>
+            <pubDate>Wed, 04 Apr 2018 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>On a rather cold, chilly, and windy April afternoon, I drove to [Davis Purdue
+Agricultural Center (DPAC)][1] along with my colleague, Matt to collect some
+machine data.</p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[Houston, we have a problem]]></title>
             <link>https://isoblue.org/blog/2018/02/19/antenna-issue.html</link>
