@@ -1,104 +1,132 @@
-<html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Setting It Up · ISOBlue 2.0</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Setting It Up · ISOBlue 2.0"/><meta property="og:type" content="website"/><meta property="og:url" content="https://isoblue.org/index.html"/><meta property="og:description" content="There are a few steps to perform before ISOBlue 2.0 can send data to the Cloud."/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://isoblue.org/blog/atom.xml" title="ISOBlue 2.0 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://isoblue.org/blog/feed.xml" title="ISOBlue 2.0 Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/oats_logo.png"/><h2 class="headerTitle">ISOBlue 2.0</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li><a href="/docs/bom.html" target="_self">Docs</a></li><li><a href="/blog" target="_self">Blog</a></li><li><a href="https://github.com/ISOBlue" target="_self">Github</a></li><li><a href="https://groups.google.com/forum/?fromgroups#!forum/isoblue" target="_self">Mailing List</a></li><li><a href="http://cloudradio39.ecn.purdue.edu/" target="_self">Public Data</a></li><li><a href="/en/help.html" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Software</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>Background</h3><ul><li class="navListItem"><a class="navItem" href="/docs/howitworks.html">How ISOBlue 2.0 Works?</a></li></ul></div><div class="navGroup navGroupActive"><h3>Hardware</h3><ul><li class="navListItem"><a class="navItem" href="/docs/bom.html">Hardware Bill of Materials</a></li><li class="navListItem"><a class="navItem" href="/docs/hwbuild.html">Hardware Assembly</a></li></ul></div><div class="navGroup navGroupActive"><h3>Software</h3><ul><li class="navListItem"><a class="navItem" href="/docs/build.html">Build Instructions</a></li><li class="navListItem"><a class="navItem" href="/docs/flashing.html">Flashing an Image</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/setup.html">Setting It Up</a></li></ul></div><div class="navGroup navGroupActive"><h3>Data</h3><ul><li class="navListItem"><a class="navItem" href="/docs/data.html">How to Read the Collected Data</a></li></ul></div></div></section></div><script>
+<html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Setting It Up · ISOBlue 2.0</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Setting It Up · ISOBlue 2.0"/><meta property="og:type" content="website"/><meta property="og:url" content="https://isoblue.org/index.html"/><meta property="og:description" content="There are a few steps to perform before ISOBlue 2.0 can collect and send data to"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://isoblue.org/blog/atom.xml" title="ISOBlue 2.0 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://isoblue.org/blog/feed.xml" title="ISOBlue 2.0 Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/oats_logo.png"/><h2 class="headerTitle">ISOBlue 2.0</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li><a href="/docs/bom.html" target="_self">Docs</a></li><li><a href="/blog" target="_self">Blog</a></li><li><a href="https://github.com/ISOBlue" target="_self">Github</a></li><li><a href="https://groups.google.com/forum/?fromgroups#!forum/isoblue" target="_self">Mailing List</a></li><li><a href="/en/help.html" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Software</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>Background</h3><ul><li class="navListItem"><a class="navItem" href="/docs/howitworks.html">How ISOBlue 2.0 Works?</a></li></ul></div><div class="navGroup navGroupActive"><h3>Hardware</h3><ul><li class="navListItem"><a class="navItem" href="/docs/bom.html">Hardware Bill of Materials</a></li><li class="navListItem"><a class="navItem" href="/docs/hwbuild.html">Hardware Assembly</a></li><li class="navListItem"><a class="navItem" href="/docs/deploy.html">Deployment</a></li></ul></div><div class="navGroup navGroupActive"><h3>Software</h3><ul><li class="navListItem"><a class="navItem" href="/docs/build.html">Build Instructions</a></li><li class="navListItem"><a class="navItem" href="/docs/flashing.html">Flashing an Image</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/setup.html">Setting It Up</a></li></ul></div><div class="navGroup navGroupActive"><h3>Data</h3><ul><li class="navListItem"><a class="navItem" href="/docs/public-data.html">Public Data</a></li><li class="navListItem"><a class="navItem" href="/docs/data.html">How to Read Data</a></li></ul></div></div></section></div><script>
           var toggler = document.getElementById('navToggler');
           var nav = document.getElementById('docsNav');
           toggler.onclick = function() {
             nav.classList.toggle('docsSliderActive');
           };
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1>Setting It Up</h1></header><article><div><span><p>There are a few steps to perform before ISOBlue 2.0 can send data to the Cloud.
-The following sections assume that you have already flashed an ISOBlue image to
-the ISOBlue hardware. They also serve as a basic debugging steps for anyone who
-cannot get ISOBlue running as expected.</p>
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1>Setting It Up</h1></header><article><div><span><p>There are a few steps to perform before ISOBlue 2.0 can collect and send data to
+the Cloud.  The following sections assume that you have already flashed an
+ISOBlue 2.0 image to the assembled hardware. They also serve as a basic
+debugging steps for a malfunctioning ISOBlue 2.0.</p>
 <!--truncate-->
-<p>ISOBlue 2.0 manages the scripts and programs using <a href="https://www.freedesktop.org/wiki/Software/systemd/">systemd</a>. You can view all the
-services running by using this command:</p>
+<h2><a class="anchor" aria-hidden="true" name="notes-on-systemd"></a><a href="#notes-on-systemd" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Notes on systemd</h2>
+<p>ISOBlue 2.0 manages the scripts and programs using <a href="https://www.freedesktop.org/wiki/Software/systemd/">systemd</a>. You can view
+all the services running by using this command:</p>
 <pre><code class="hljs css shell">root@localhost:~# systemctl status
 </code></pre>
-<p>You can replace <code>status</code> with <code>enable</code>, <code>disable</code>, <code>start</code> and <code>stop</code> plus a
-service name to perform different actions on a service.</p>
+<p>You can replace <code>status</code> with <code>enable</code>, <code>disable</code>, <code>start</code>, <code>stop</code>, <code>restart</code>,
+etc., plus a service name to trigger different actions on a service.</p>
 <p>You can check the status and view the log of a service by running:</p>
 <pre><code class="hljs css shell">root@localhost:~# journalctl -u name-of-service
 </code></pre>
-<h2><a class="anchor" aria-hidden="true" name="check-internet-connectivity"></a><a href="#check-internet-connectivity" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Check Internet Connectivity</h2>
+<p>Now, let's dive into configuring your ISOBlue 2.0.</p>
+<h2><a class="anchor" aria-hidden="true" name="1-check-internet-connectivity"></a><a href="#1-check-internet-connectivity" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Check Internet Connectivity</h2>
 <p>ISOBlue 2.0 uses <a href="https://www.freedesktop.org/software/libqmi/man/1.8.0/qmicli.1.html">qmicli</a> to setup the Internet connections. The network
 device is specified as <code>wwan0</code>. There are two ways to check for Internet
 connectivity:</p>
-<ol>
+<ul>
 <li><code>ping</code></li>
-</ol>
-<pre><code class="hljs css shell">ping google.com
-</code></pre>
-<p>Check if you could get any responses.</p>
-<ol start="2">
+</ul>
+<p>Check if you could get any responses after running <code>ping google.com</code>.</p>
+<ul>
 <li><code>ifconfig</code></li>
-</ol>
+</ul>
 <p>After you run <code>ifconfig</code>, you should be able to see that <code>wwan0</code> is already
 associated with an IP address.</p>
 <p>In our testing, sometimes an ISOBlue 2.0 could try multiple IPs and then settle
 down to one. This process sometimes takes up to several minutes.</p>
 <p>Once you are certain that your ISOBlue 2.0 has Internet, move on to the next
 section.</p>
-<h2><a class="anchor" aria-hidden="true" name="setup-ssh-connections"></a><a href="#setup-ssh-connections" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setup SSH Connections</h2>
+<h3><a class="anchor" aria-hidden="true" name="in-case-it-doesn-t-connect-"></a><a href="#in-case-it-doesn-t-connect-" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>In case it doesn't connect ...</h3>
+<p>A few things to check:</p>
+<ul>
+<li>Are the antennas installed?</li>
+<li>If the antennas are installed, are all connections (uFl to SMA, SMA to SMA)
+tightened?</li>
+<li>Is the SIM card properly inserted?</li>
+<li>If the SIM card is installed, are you certain you have a valid data plan?</li>
+<li>Are you inside or outside? If you are inside, make sure your antennas are
+closer to the windows.</li>
+</ul>
+<p>If your answers are yes to the first four of these questions, then there are a
+few things to try:</p>
+<ul>
+<li>Run</li>
+</ul>
+<pre><code class="hljs css shell">root@localhost:~# udevadm trigger
+</code></pre>
+<p>This triggers the udev rule that setup the cellular module to connect to the
+Internet. Check using <code>ifconfig</code> to see if this helps.</p>
+<ul>
+<li>If the above doesn't help, run</li>
+</ul>
+<pre><code class="hljs css shell">root@localhost:~# qmicli -p -d /dev/cdc-wdm0 --wds-start-network=Broadband \
+                  --client-no-release-cid
+</code></pre>
+<p>This should return message like <code>Network has started</code>. This means you have
+already registered onto your network provider. Then run the following command
+to obtain a valid IP:</p>
+<pre><code class="hljs css shell">root@localhost:~# dhclient wwan0
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" name="2-setup-ssh-connections"></a><a href="#2-setup-ssh-connections" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Setup SSH Connections</h2>
 <p><a href="https://www.ssh.com/ssh/">SSH</a> plays a critical role for debugging and data streaming to Cloud in
 ISOBlue 2.0. We have provided two default SSH related <code>systemd</code> services:</p>
-<ol>
+<ul>
 <li><em>ssh-forward.service</em></li>
-</ol>
+</ul>
 <p>This service performs SSH port forwarding from your ISOBlue 2.0's local SSH port
-to a port on a remote machine. By default, the remote machine username and
-domain is <code>isoblue2@vip4.ecn.purdue.edu</code>.</p>
-<ol start="2">
+to a port on a remote machine for debugging purposes. By default, the remote
+machine username and domain is <code>isoblue2@vip4.ecn.purdue.edu</code>.</p>
+<ul>
 <li><em>tunnel.service</em></li>
-</ol>
+</ul>
 <p>This service provides SSH tunneling for mirroring Kafka clusters between ISOBlue
 2.0 and the remote cluster. By default, the remote cluster username and domain is
 <code>yang@cloudradio39.ecn.purdue.edu</code>.</p>
-<p>You can change the remote machine and cluster any time.</p>
+<p>Both services are located in <code>/lib/systemd/system</code>. You can change the remote
+machine and cluster domains to your custom domains. You can use one remote
+machine for both debugging as well as receiving Kafka messages. The following
+steps assume that you have one debugging machine and one cluster machine that
+has Kafka running.</p>
 <h3><a class="anchor" aria-hidden="true" name="generate-ssh-keys"></a><a href="#generate-ssh-keys" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Generate SSH Keys</h3>
-<p>Run the following command to generate a SSH public key and a private key (<strong>use
-default location and use no password</strong>):</p>
+<p>Run the following command to generate a set of SSH keys (<strong>use default location
+and use no password</strong>):</p>
 <pre><code class="hljs css shell">root@localhost:~# ssh-keygen
 </code></pre>
-<p>Once the keys are generated, they will be located in <code>~/.ssh</code>. We would need
-the content in <code>id_rsa.pub</code>.</p>
+<p>Once the keys are generated, they will be located in <code>~/.ssh</code>.</p>
 <h3><a class="anchor" aria-hidden="true" name="setup-ssh-forward"></a><a href="#setup-ssh-forward" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setup SSH Forward</h3>
-<p>Add the content of <code>id_rsa.pub</code> on ISOBlue 2.0 to your remote machine's
-<code>authorized_keys</code>.</p>
+<p>Add the content of <code>~/.ssh/id_rsa.pub</code> from ISOBlue 2.0 to your remote debugging
+machine's <code>~/.ssh/authorized_keys</code>.</p>
 <p>Then you will run this on ISOBlue:</p>
 <pre><code class="hljs css shell">root@localhost:~# ssh -NR *:SSHPORT:localhost:22 username@domain1
 </code></pre>
-<p>You will be prompt to type yes or no. Type yes to add the remote host to your
+<p>You will be prompted to type yes or no. Type yes to add the remote host to your
 <code>known_hosts</code>. You only need to do it manually once.</p>
 <p>Note: <code>SSHPORT</code> is specified when you are building your image.</p>
 <h3><a class="anchor" aria-hidden="true" name="setup-ssh-tunnel"></a><a href="#setup-ssh-tunnel" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setup SSH Tunnel</h3>
-<p>Add the content of <code>id_rsa.pub</code> on ISOBlue 2.0 to your remote machine's
-<code>authorized_keys</code>.</p>
+<p>Add the content of <code>~/.ssh/id_rsa.pub</code> on ISOBlue 2.0 to your remote machine's
+<code>~/.ssh/authorized_keys</code>.</p>
 <p>Then you will run this on ISOBlue:</p>
 <pre><code class="hljs css shell">root@localhost:~/# ssh -NL localhost:BROKERPORT:domain2:9092 -L \
                   localhost:ZKPORT:domain2:2181 \
                   username@domain2
 </code></pre>
-<p>You will be prompt to type yes or no. Type yes to add the remote host to your
+<p>You will be prompted to type yes or no. Type yes to add the remote host to your
 <code>known_hosts</code>. You only need to do it manually once.</p>
-<p>Notes:</p>
-<ul>
-<li><code>BROKERPORT</code>, <code>ZKPORT</code> are also specified when you build your image.</li>
-<li><code>domain1</code> and <code>domain2</code> can be the same machine but <code>domain2</code> needs to have
-Kafka broker and a zookeeper running.</li>
-</ul>
-<h2><a class="anchor" aria-hidden="true" name="check-running-services"></a><a href="#check-running-services" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Check Running Services</h2>
+<p>Note: <code>BROKERPORT</code>, <code>ZKPORT</code> are also specified when you build your image.</p>
+<h2><a class="anchor" aria-hidden="true" name="3-verify-running-services"></a><a href="#3-verify-running-services" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Verify Running Services</h2>
 <p>There are a few key <code>systemd</code> services that will be running after flashing
-process is completed and after each boot:</p>
-<ol>
+process is completed as well as after each boot.</p>
+<ul>
 <li><em>gpsd.service</em></li>
-</ol>
+</ul>
 <p>This service connects to the USB GPS module and enables clients to fetch GPS
 related data. When you use <code>journalctl -u gpsd</code> to check its logs, you usually
 see useful on whether this service is working or not. Typically, if it is
-working, you will be see some words like <code>time to report a fix ...</code> or something
-along the line.</p>
-<ol start="2">
+working, log message <code>time to report a fix ...</code> will occur once per second.</p>
+<ul>
 <li><em>broker.service</em> and <em>zookeeper.service</em></li>
-</ol>
+</ul>
 <p>The combination of these two services is the <strong>heart</strong> of ISOBlue 2.0. <strong>No
 broker/zookeeper, no logging.</strong> The <em>broker</em> and <em>zookeeper</em> bring up and
 handle the overall logging of CAN messages, GPS data and other debugging data.
@@ -126,15 +154,24 @@ folders, you should be able see things like this after you run <code>ls -alh</co
 You can keep checking whether the size of the file changes or not. This will
 quickly tell you statuses of the <em>broker</em>, <em>zookeeper</em> and other logging
 services.</p>
-<ol start="3">
+<ul>
 <li><em>mirror.service</em></li>
-</ol>
+</ul>
 <p>This service uses the SSH tunnel setup to forward <code>debug</code> and <code>remote</code> topic
 Kafka message to a remote Kafka cluster residing in an OATS cluster. It requires
 network connectivity for this service to work.</p>
-<ol start="4">
+<ul>
+<li><em>get-pgns.service</em></li>
+</ul>
+<p>This service runs <code>get_pgns.sh</code> script located in <code>/opt/bin</code>. The script fetches
+a file that contains the list of PGNs and replaces the <code>/opt/pgns</code> every 5
+seconds. This file will be later parsed into a fitler by a program that logs CAN
+data based on this filter.</p>
+<p>You can change the remote file location in <code>get_pgns.sh</code> as you wish. It also
+requires a network connectivity to work.</p>
+<ul>
 <li><em>can-watchdog.service</em></li>
-</ol>
+</ul>
 <p>This service watches the presence of CAN activities. It is <strong>not</strong> enabled by
 default. You can keep it disabled when you are configuring an ISOBlue 2.0 for
 the first time. Remember to enable it once you are done setting up the ISOBlue.
@@ -143,4 +180,7 @@ runs out).</p>
 <p>You can also check the statuses and perform actions on all the other ISOBlue 2.0
 specified services. The name and all <code>systemd</code> service file can be found
 <a href="https://github.com/ISOBlue/meta-isoblue/tree/master/recipes-core/systemd/systemd">here</a>.</p>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="flashing.html">← Flashing an Image</a><a class="docs-next button" href="data.html">How to Read the Collected Data →</a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/docusaurus.svg" alt="ISOBlue 2.0" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/howitworks.html">How it Works?</a><a href="/docs/bom.html">Bill of Materials</a><a href="/docs/build.html">Software Build Instructions</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="https://groups.google.com/forum/?fromgroups#!forum/isoblue">Mailing List</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" href="https://github.com/ISOBlue/" data-icon="octicon-star" data-count-href="/ISOBlue/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://engineering.purdue.edu/oatsgroup/" target="_blank" class="fbOpenSource"><img src="/img/oats_logo.png" alt="OATS" width="170" height="45"/></a></footer></div></body></html>
+<h2><a class="anchor" aria-hidden="true" name="ok-what-now"></a><a href="#ok-what-now" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ok, What Now?</h2>
+<p>At this point, you should have a fully functional ISOBlue 2.0. Can you see your
+ISOBlue 2.0 showing up on <a href="http://wheres-my-isoblue.oatsgroup.org/">where is my ISOBlue</a>?</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="flashing.html">← Flashing an Image</a><a class="docs-next button" href="public-data.html">Public Data →</a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/docusaurus.svg" alt="ISOBlue 2.0" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/howitworks.html">How it Works?</a><a href="/docs/bom.html">Bill of Materials</a><a href="/docs/build.html">Software Build Instructions</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="https://groups.google.com/forum/?fromgroups#!forum/isoblue">Mailing List</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" href="https://github.com/ISOBlue/" data-icon="octicon-star" data-count-href="/ISOBlue/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://engineering.purdue.edu/oatsgroup/" target="_blank" class="fbOpenSource"><img src="/img/oats_logo.png" alt="OATS" width="170" height="45"/></a></footer></div></body></html>

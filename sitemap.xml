@@ -11,9 +11,11 @@
 <url> <loc>https://isoblue.org/docs/bom.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://isoblue.org/docs/bom.html" /> </url>
 <url> <loc>https://isoblue.org/docs/build.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://isoblue.org/docs/build.html" /> </url>
 <url> <loc>https://isoblue.org/docs/data.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://isoblue.org/docs/data.html" /> </url>
+<url> <loc>https://isoblue.org/docs/deploy.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://isoblue.org/docs/deploy.html" /> </url>
 <url> <loc>https://isoblue.org/docs/flashing.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://isoblue.org/docs/flashing.html" /> </url>
 <url> <loc>https://isoblue.org/docs/howitworks.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://isoblue.org/docs/howitworks.html" /> </url>
 <url> <loc>https://isoblue.org/docs/hwbuild.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://isoblue.org/docs/hwbuild.html" /> </url>
 <url> <loc>https://isoblue.org/docs/intro.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://isoblue.org/docs/intro.html" /> </url>
+<url> <loc>https://isoblue.org/docs/public-data.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://isoblue.org/docs/public-data.html" /> </url>
 <url> <loc>https://isoblue.org/docs/setup.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://isoblue.org/docs/setup.html" /> </url>
 </urlset>
