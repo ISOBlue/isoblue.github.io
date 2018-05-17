@@ -9,7 +9,7 @@
         <generator>Feed for Node.js</generator>
         <image>
             <title>ISOBlue 2.0 Blog</title>
-            <url>https://isoblue.orgimg/oats_logo.png</url>
+            <url>https://isoblue.org/img/oats_logo.png</url>
             <link>https://isoblue.org/blog</link>
         </image>
         <copyright>Copyright © 2018Open Agricultural Systems Group</copyright>
@@ -18,11 +18,9 @@
             <link>https://isoblue.org/blog/2018/04/04/dpac.html</link>
             <guid>https://isoblue.org/blog/2018/04/04/dpac.html</guid>
             <pubDate>Wed, 04 Apr 2018 06:00:00 GMT</pubDate>
-            <description><![CDATA[
-On a rather cold, chilly, and windy April afternoon, I drove to [Davis Purdue
+            <description><![CDATA[<p>On a rather cold, chilly, and windy April afternoon, I drove to [Davis Purdue
 Agricultural Center (DPAC)][1] along with my colleague, Matt to collect some
-machine data.
-
+machine data.</p>
 ]]></description>
         </item>
         <item>
@@ -30,12 +28,10 @@ machine data.
             <link>https://isoblue.org/blog/2018/02/19/antenna-issue.html</link>
             <guid>https://isoblue.org/blog/2018/02/19/antenna-issue.html</guid>
             <pubDate>Mon, 19 Feb 2018 06:00:00 GMT</pubDate>
-            <description><![CDATA[
-We have built 5 ISOBlue 2.0s and they are up and running when they need to.
+            <description><![CDATA[<p>We have built 5 ISOBlue 2.0s and they are up and running when they need to.
 Since we are not necessarily product design or mechanical design experts, we
 try our best to fit ISOBlue inside a weatherproof enclosure with all the
-connectors and antennas sticking out.
-
+connectors and antennas sticking out.</p>
 ]]></description>
         </item>
         <item>
@@ -43,13 +39,11 @@ connectors and antennas sticking out.
             <link>https://isoblue.org/blog/2018/02/16/new-site.html</link>
             <guid>https://isoblue.org/blog/2018/02/16/new-site.html</guid>
             <pubDate>Fri, 16 Feb 2018 06:00:00 GMT</pubDate>
-            <description><![CDATA[
-As you could see, we have made some renovations to the ISOBlue website. Projects
+            <description><![CDATA[<p>As you could see, we have made some renovations to the ISOBlue website. Projects
 like ISOBlue is constantly changing and adapting to the newest and hotest
 trends in open-source community in terms of Cloud architecture tools, build
 tools, hardware, etc. It will be helpful for both you and us to get informed
-with the latest status of ISOBlue.
-
+with the latest status of ISOBlue.</p>
 ]]></description>
         </item>
         <item>
@@ -57,11 +51,9 @@ with the latest status of ISOBlue.
             <link>https://isoblue.org/blog/2016/04/14/CANdroid-manure.html</link>
             <guid>https://isoblue.org/blog/2016/04/14/CANdroid-manure.html</guid>
             <pubDate>Thu, 14 Apr 2016 06:00:00 GMT</pubDate>
-            <description><![CDATA[
-We utilized CANdroid to collect ISOBUS data during a manure spreading session.
+            <description><![CDATA[<p>We utilized CANdroid to collect ISOBUS data during a manure spreading session.
 The session lasted for about 2 hours with a total of 6 passes of manure
-spreading in the field.
-
+spreading in the field.</p>
 ]]></description>
         </item>
     </channel>
