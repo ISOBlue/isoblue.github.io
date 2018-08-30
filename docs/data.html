@@ -1,8 +1,160 @@
-<html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>How to Read Data · ISOBlue 2.0</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="How to Read Data · ISOBlue 2.0"/><meta property="og:type" content="website"/><meta property="og:url" content="https://isoblue.org/index.html"/><meta property="og:description" content="Under construction."/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://isoblue.org/blog/atom.xml" title="ISOBlue 2.0 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://isoblue.org/blog/feed.xml" title="ISOBlue 2.0 Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/oats_logo.png"/><h2 class="headerTitle">ISOBlue 2.0</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li><a href="/docs/bom.html" target="_self">Docs</a></li><li><a href="/blog" target="_self">Blog</a></li><li><a href="https://github.com/ISOBlue" target="_self">Github</a></li><li><a href="https://groups.google.com/forum/?fromgroups#!forum/isoblue" target="_self">Mailing List</a></li><li><a href="/en/help.html" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Data</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>Background</h3><ul><li class="navListItem"><a class="navItem" href="/docs/howitworks.html">How ISOBlue 2.0 Works?</a></li></ul></div><div class="navGroup navGroupActive"><h3>Hardware</h3><ul><li class="navListItem"><a class="navItem" href="/docs/bom.html">Hardware Bill of Materials</a></li><li class="navListItem"><a class="navItem" href="/docs/hwbuild.html">Hardware Assembly</a></li><li class="navListItem"><a class="navItem" href="/docs/deploy.html">Deployment</a></li></ul></div><div class="navGroup navGroupActive"><h3>Software</h3><ul><li class="navListItem"><a class="navItem" href="/docs/build.html">Build Instructions</a></li><li class="navListItem"><a class="navItem" href="/docs/flashing.html">Flashing an Image</a></li><li class="navListItem"><a class="navItem" href="/docs/setup.html">Setting It Up</a></li></ul></div><div class="navGroup navGroupActive"><h3>Data</h3><ul><li class="navListItem"><a class="navItem" href="/docs/public-data.html">Public Data</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/data.html">How to Read Data</a></li></ul></div></div></section></div><script>
+<html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>How to Read Data · ISOBlue 2.0</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="How to Read Data · ISOBlue 2.0"/><meta property="og:type" content="website"/><meta property="og:url" content="https://isoblue.org/index.html"/><meta property="og:description" content="This tutorial assumes you are running Linux and know your way around it."/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://isoblue.org/blog/atom.xml" title="ISOBlue 2.0 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://isoblue.org/blog/feed.xml" title="ISOBlue 2.0 Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/oats_logo.png"/><h2 class="headerTitle">ISOBlue 2.0</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li><a href="/docs/bom.html" target="_self">Docs</a></li><li><a href="/blog" target="_self">Blog</a></li><li><a href="https://github.com/ISOBlue" target="_self">Github</a></li><li><a href="https://groups.google.com/forum/?fromgroups#!forum/isoblue" target="_self">Mailing List</a></li><li><a href="/en/help.html" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Data</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>Background</h3><ul><li class="navListItem"><a class="navItem" href="/docs/howitworks.html">How ISOBlue 2.0 Works?</a></li></ul></div><div class="navGroup navGroupActive"><h3>Hardware</h3><ul><li class="navListItem"><a class="navItem" href="/docs/bom.html">Hardware Bill of Materials</a></li><li class="navListItem"><a class="navItem" href="/docs/hwbuild.html">Hardware Assembly</a></li><li class="navListItem"><a class="navItem" href="/docs/deploy.html">Deployment</a></li></ul></div><div class="navGroup navGroupActive"><h3>Software</h3><ul><li class="navListItem"><a class="navItem" href="/docs/build.html">Build Instructions</a></li><li class="navListItem"><a class="navItem" href="/docs/flashing.html">Flashing an Image</a></li><li class="navListItem"><a class="navItem" href="/docs/setup.html">Setting It Up</a></li></ul></div><div class="navGroup navGroupActive"><h3>Data</h3><ul><li class="navListItem"><a class="navItem" href="/docs/public-data.html">Public Data</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/data.html">How to Read Data</a></li></ul></div></div></section></div><script>
           var toggler = document.getElementById('navToggler');
           var nav = document.getElementById('docsNav');
           toggler.onclick = function() {
             nav.classList.toggle('docsSliderActive');
           };
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1>How to Read Data</h1></header><article><div><span><p>Under construction.</p>
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1>How to Read Data</h1></header><article><div><span><p>This tutorial assumes you are running Linux and know your way around it.</p>
+<h2><a class="anchor" aria-hidden="true" name="prerequisites"></a><a href="#prerequisites" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Prerequisites</h2>
+<h3><a class="anchor" aria-hidden="true" name="install-the-java-run-time-envrionment-jre"></a><a href="#install-the-java-run-time-envrionment-jre" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install the Java Run Time Envrionment (JRE)</h3>
+<p>For installing the JRE, please consult <a href="https://medium.com/coderscorner/installing-oracle-java-8-in-ubuntu-16-10-845507b13343">this webpage</a> as it provides an easy,
+step-by-step process to install JRE.</p>
+<p>To verify the JRE has been installed correctly, run:</p>
+<pre><code class="hljs">java -<span class="hljs-built_in">version</span>
+</code></pre>
+<p>This should output something along the line with these:</p>
+<pre><code class="hljs">java version <span class="hljs-string">"1.8.0_181"</span>
+Java(TM) SE Runtime Environment (build 1.8.0_181-b13)
+Java HotSpot(TM) 64-Bit<span class="hljs-built_in"> Server </span>VM (build 25.181-b13, mixed mode)
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" name="install-libraries-and-dependencies"></a><a href="#install-libraries-and-dependencies" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install libraries and dependencies</h3>
+<ul>
+<li>Install kafka-python</li>
+</ul>
+<p><a href="https://pypi.org/project/kafka-python/">kafka-python</a> is the python client for Apache Kafka. For the consumer
+scripts we wrote, it uses the library's <a href="https://kafka-python.readthedocs.io/en/master/apidoc/KafkaConsumer.html">KafkaConsumer</a> to consume the
+message from a broker. To install, run:</p>
+<pre><code class="hljs css shell">pip install kafka-python
+</code></pre>
+<p>To verify the library has been installed correctly, start python shell and run:</p>
+<pre><code class="hljs css python"><span class="hljs-keyword">from</span> kafka <span class="hljs-keyword">import</span> KafkaConsumer
+</code></pre>
+<p>If no error pop up, that means the library is all set.</p>
+<ul>
+<li>Install avro</li>
+</ul>
+<p>We use <a href="https://avro.apache.org/docs/1.8.1/index.html">Apache Avro</a> for packing our data into binary format using schemas
+we defined for CAN, GPS and other messages. To install avro, please follow the
+<a href="https://avro.apache.org/docs/1.8.1/gettingstartedpython.html">tutorial</a> from the official webpage.</p>
+<p>To verify the library has been installed correctly, run this in a python
+shell:</p>
+<pre><code class="hljs css python"><span class="hljs-keyword">import</span> avro
+</code></pre>
+<p>This should not raise any error if the library is installed correctly.</p>
+<h3><a class="anchor" aria-hidden="true" name="download-and-setup-system-path-for-kafka"></a><a href="#download-and-setup-system-path-for-kafka" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Download and setup system path for Kafka</h3>
+<p>We are using an older version of Apache Kafka. It can be downloaded from <a href="http://cloudradio39.ecn.purdue.edu/kafka_2.11-0.10.1.0.tar.gz">this
+link</a>.</p>
+<p>After download is complete, extract the content into a directory of your
+choice. The directory will have <code>bin</code> that has all the executables and <code>config</code>
+that contains all the configuration files for the executables.</p>
+<p>We need to add the needed executables into system path. To do so, add
+this line to the end of your <code>~/.profile</code>:</p>
+<pre><code class="hljs css shell">export PATH=/somewhere/on/your/filesystem/kafka_2.11-0.10.1.0/bin:$PATH
+</code></pre>
+<p>Save and exit and do:</p>
+<pre><code class="hljs css shell">source ~/.profile
+</code></pre>
+<p>Then this path will be added to your system path <strong>ONLY</strong> for this terminal
+session. To make this permanent, you have to log back out and in again.</p>
+<p>To make sure the executables are in the path, try typing in <code>kafka</code> in the
+terminal and tab-completing, it should have a number of options. Try
+tab-completing <code>zookeeper</code> as well as it should give you a number of options
+too. Make sure you have these executables:</p>
+<ul>
+<li><code>zookeeper-server-start.sh</code></li>
+<li><code>kafka-server-start.sh</code></li>
+<li><code>kafka-server-stop.sh</code></li>
+<li><code>zookeeper-server-stop.sh</code></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" name="download-custom-scripts-and-schemas"></a><a href="#download-custom-scripts-and-schemas" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Download custom scripts and schemas</h3>
+<p>First off, download the custom scripts from <a href="http://cloudradio39.ecn.purdue.edu/scripts_and_schemas.tar.gz">here</a> and extract the contents.
+Let's go through the contents one by one.</p>
+<ol>
+<li><code>kafka_preps.sh</code></li>
+</ol>
+<p>This script starts off an instance of zookeeper and a Kafka broker. There are
+several variables to specify for it to run correctly. The specifications will
+be discussed in the <em>Setup a zookeeper and a Kafka broker</em> section.</p>
+<ol start="2">
+<li><code>kafka_stop.sh</code></li>
+</ol>
+<p>You can use this script to stop the zookeeper and the broker instance you
+created.</p>
+<ol start="3">
+<li><code>kafka_can_consumer.py</code> and <code>kafka_gps_consumer.py</code></li>
+</ol>
+<p>These two scripts use the <code>python-kafka</code> and the <code>avro</code> library you just
+installed. One consumes the CAN messages and the other consumes the gps
+messages from the broker you set up. The details on how to use these two scripts
+will be discussed in later sections.</p>
+<ol start="4">
+<li><code>schema</code> directory</li>
+</ol>
+<p>This directory contains the avro schemas we defined for different message types.</p>
+<h3><a class="anchor" aria-hidden="true" name="have-your-data-ready"></a><a href="#have-your-data-ready" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Have your data ready</h3>
+<p>You can transfer the <code>kafka-logs</code> directory from your ISOBlue 2.0 device to a
+local directory of your choice. Alternatively, you can download some <code>kafka-logs</code>
+from the <em>Public Data</em> section from this site to test.</p>
+<h2><a class="anchor" aria-hidden="true" name="setup-a-zookeeper-and-a-kafka-broker"></a><a href="#setup-a-zookeeper-and-a-kafka-broker" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setup a zookeeper and a Kafka broker</h2>
+<p>For this part, you will need the <code>kafka_preps.sh</code> script.</p>
+<p>There are two parameters you need to change in this script.</p>
+<ol>
+<li><code>cfgdir</code></li>
+</ol>
+<p>This directory specifies the configuration files directory for the zookeeper and
+the broker. It usually should be changed to a absolute path of where you put you
+extracted the Kafka directory.</p>
+<ol start="2">
+<li><code>kflogdir</code></li>
+</ol>
+<p>This directory should contain the absolute path that point to whereever you
+store your <code>kafka-logs</code> directory.</p>
+<p>After these two parameters are set, run this in your terminal:</p>
+<pre><code class="hljs">./kafka_preps<span class="hljs-selector-class">.sh</span>
+</code></pre>
+<p>If no error pop up, then an instance of a zookeeper and a broker should be up.</p>
+<h2><a class="anchor" aria-hidden="true" name="consume-kafka-messages"></a><a href="#consume-kafka-messages" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Consume Kafka messages</h2>
+<p>Once you have the zookeeper and broker up, we can start consuming messages from
+them. <strong>Make sure</strong> the <code>schema</code> directory is in the same directory as where
+the scripts reside.</p>
+<h3><a class="anchor" aria-hidden="true" name="consume-can-messages"></a><a href="#consume-can-messages" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Consume CAN messages</h3>
+<p>To consume the CAN messages, you will use the <code>kafka_can_consumer.py</code> script.
+You will need to specify a <code>topic</code> and an <code>auto_offset_reset</code> parameter. The
+available <code>topic</code>s for consuming CAN messages are:</p>
+<ul>
+<li><code>tra</code></li>
+<li><code>imp</code></li>
+</ul>
+<p>And the available <code>auto_offset_reset</code> parameters are:</p>
+<ul>
+<li><code>earliest</code></li>
+<li><code>latest</code></li>
+</ul>
+<p>For consuming the CAN messages from the start of the tractor bus log, you will
+run:</p>
+<pre><code class="hljs">./kafka_can_consumer<span class="hljs-selector-class">.py</span> -t tra -<span class="hljs-selector-tag">a</span> earliest
+</code></pre>
+<p>Or simply:</p>
+<pre><code class="hljs">./kafka_can_consumer<span class="hljs-selector-class">.py</span> -t tra
+</code></pre>
+<p>As the script defaults to consume from the beginning of the log from a given
+topic.</p>
+<p>The script will then output the consumed logs that has timestamp, pgn, and the
+data payload bytes and these fields are space-separated.</p>
+<p>You can use <code>&gt;</code> to redirect the script output to a file, i.e.:</p>
+<pre><code class="hljs css shell">./kafka_can_consumer.py -t tra &gt; tra.log
+</code></pre>
+<p>The script will exit once it consumes all the messages.</p>
+<h3><a class="anchor" aria-hidden="true" name="consume-gps-messages"></a><a href="#consume-gps-messages" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Consume GPS messages</h3>
+<p>The <code>kafka_gps_consumer.py</code> is not written as rigorous as
+<code>kafka_can_consumer.py</code>. The topic is set to <code>gps</code> and the <code>auto_offset_reset</code>
+parameter is already set to <code>earliest</code> in the script. To consume the GPS
+messages and store them in a file, just run:</p>
+<pre><code class="hljs">./kafka_gps_consumer<span class="hljs-selector-class">.py</span> &gt; gps<span class="hljs-selector-class">.log</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" name="stop-zookeeper-and-broker"></a><a href="#stop-zookeeper-and-broker" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Stop zookeeper and broker</h2>
+<p>After you think you are done using the zookeeper and broker, you can start them
+by running the custom script:</p>
+<pre><code class="hljs">./kafka_stop<span class="hljs-selector-class">.sh</span>
+</code></pre>
 </span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="public-data.html">← Public Data</a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/docusaurus.svg" alt="ISOBlue 2.0" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/howitworks.html">How it Works?</a><a href="/docs/bom.html">Bill of Materials</a><a href="/docs/build.html">Software Build Instructions</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="https://groups.google.com/forum/?fromgroups#!forum/isoblue">Mailing List</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" href="https://github.com/ISOBlue/" data-icon="octicon-star" data-count-href="/ISOBlue/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://engineering.purdue.edu/oatsgroup/" target="_blank" class="fbOpenSource"><img src="/img/oats_logo.png" alt="OATS" width="170" height="45"/></a></footer></div></body></html>
