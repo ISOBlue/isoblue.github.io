@@ -17,7 +17,10 @@ step-by-step process to install JRE.</p>
 Java(TM) SE Runtime Environment (build 1.8.0_181-b13)
 Java HotSpot(TM) 64-Bit<span class="hljs-built_in"> Server </span>VM (build 25.181-b13, mixed mode)
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" name="install-libraries-and-dependencies"></a><a href="#install-libraries-and-dependencies" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install libraries and dependencies</h3>
+<h3><a class="anchor" aria-hidden="true" name="install-python-libraries-and-dependencies"></a><a href="#install-python-libraries-and-dependencies" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install python libraries and dependencies</h3>
+<p><strong>Note:</strong> we are still using python2 based dependencies. Therefore, make sure
+when you run <code>pip</code>, you are using python2 as your default python and install the
+corresponding python2 dependencies.</p>
 <ul>
 <li>Install kafka-python</li>
 </ul>
@@ -29,7 +32,7 @@ message from a broker. To install, run:</p>
 <p>To verify the library has been installed correctly, start python shell and run:</p>
 <pre><code class="hljs css python"><span class="hljs-keyword">from</span> kafka <span class="hljs-keyword">import</span> KafkaConsumer
 </code></pre>
-<p>If no error pop up, that means the library is all set.</p>
+<p>If no error pops up, that means the library is all set.</p>
 <ul>
 <li>Install avro</li>
 </ul>
@@ -56,10 +59,7 @@ this line to the end of your <code>~/.profile</code>:</p>
 </code></pre>
 <p>Then this path will be added to your system path <strong>ONLY</strong> for this terminal
 session. To make this permanent, you have to log back out and in again.</p>
-<p>To make sure the executables are in the path, try typing in <code>kafka</code> in the
-terminal and tab-completing, it should have a number of options. Try
-tab-completing <code>zookeeper</code> as well as it should give you a number of options
-too. Make sure you have these executables:</p>
+<p>Make sure you have these executables in your path:</p>
 <ul>
 <li><code>zookeeper-server-start.sh</code></li>
 <li><code>kafka-server-start.sh</code></li>
@@ -94,7 +94,7 @@ will be discussed in later sections.</p>
 <h3><a class="anchor" aria-hidden="true" name="have-your-data-ready"></a><a href="#have-your-data-ready" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Have your data ready</h3>
 <p>You can transfer the <code>kafka-logs</code> directory from your ISOBlue 2.0 device to a
 local directory of your choice. Alternatively, you can download some <code>kafka-logs</code>
-from the <em>Public Data</em> section from this site to test.</p>
+from the <a href="/docs/public-data.html">Public Data</a> section from this site to test.</p>
 <h2><a class="anchor" aria-hidden="true" name="setup-a-zookeeper-and-a-kafka-broker"></a><a href="#setup-a-zookeeper-and-a-kafka-broker" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setup a zookeeper and a Kafka broker</h2>
 <p>For this part, you will need the <code>kafka_preps.sh</code> script.</p>
 <p>There are two parameters you need to change in this script.</p>
