@@ -4,26 +4,54 @@
     "next": "Next",
     "previous": "Previous",
     "tagline": "Free the Ag Machinery Data",
-    "background": "Background",
-    "bom": "Hardware Bill of Materials",
-    "build": "Build Instructions",
-    "data": "How to Read the Collected Data",
-    "deploy": "Deployment",
-    "flashing": "Flashing an Image",
-    "howitworks": "How ISOBlue 2.0 Works?",
-    "hwbuild": "Hardware Assembly",
-    "intro": "Getting Started",
-    "public-data": "Public Data",
-    "setup": "Setting It Up",
-    "Docs": "Docs",
-    "Blog": "Blog",
-    "Github": "Github",
-    "Mailing List": "Mailing List",
-    "Help": "Help",
-    "Background": "Background",
-    "Hardware": "Hardware",
-    "Software": "Software",
-    "Data": "Data"
+    "docs": {
+      "background": {
+        "title": "Background"
+      },
+      "bom": {
+        "title": "Hardware Bill of Materials"
+      },
+      "build": {
+        "title": "Build Instructions"
+      },
+      "data": {
+        "title": "How to Read Data"
+      },
+      "deploy": {
+        "title": "Deployment"
+      },
+      "flashing": {
+        "title": "Flashing an Image"
+      },
+      "howitworks": {
+        "title": "What is an ISOBlue 2.0?"
+      },
+      "hwbuild": {
+        "title": "Hardware Assembly"
+      },
+      "intro": {
+        "title": "Getting Started"
+      },
+      "public-data": {
+        "title": "Public Data"
+      },
+      "setup": {
+        "title": "Setting It Up"
+      }
+    },
+    "links": {
+      "Docs": "Docs",
+      "Blog": "Blog",
+      "Github": "Github",
+      "Mailing List": "Mailing List",
+      "Help": "Help"
+    },
+    "categories": {
+      "Background": "Background",
+      "Hardware": "Hardware",
+      "Software": "Software",
+      "Data": "Data"
+    }
   },
   "pages-strings": {
     "Help Translate|recruit community translators for your project": "Help Translate",
