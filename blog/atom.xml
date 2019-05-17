@@ -2,12 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://isoblue.org/blog</id>
     <title>ISOBlue 2.0 Blog</title>
-    <updated>2018-04-04T06:00:00Z</updated>
+    <updated>2019-05-16T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://isoblue.org/blog"/>
     <subtitle>The best place to stay up-to-date with the latest ISOBlue 2.0 news and events.</subtitle>
     <logo>https://isoblue.org/img/oats_logo.png</logo>
     <rights>Copyright © 2019Open Agricultural Systems Group</rights>
+    <entry>
+        <title type="html"><![CDATA[Embrace Yourself]]></title>
+        <id>https://isoblue.org/blog/2019/05/16/isobluehd.html</id>
+        <link href="https://isoblue.org/blog/2019/05/16/isobluehd.html">
+        </link>
+        <updated>2019-05-16T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Embrace yourself, ISOBlue HD is coming.</strong></p>
+]]></summary>
+        <author>
+            <name>Yang Wang</name>
+            <uri>https://github.com/wang701</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[DPAC Experiment]]></title>
         <id>https://isoblue.org/blog/2018/04/04/dpac.html</id>

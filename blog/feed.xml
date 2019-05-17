@@ -4,7 +4,7 @@
         <title>ISOBlue 2.0 Blog</title>
         <link>https://isoblue.org/blog</link>
         <description>The best place to stay up-to-date with the latest ISOBlue 2.0 news and events.</description>
-        <lastBuildDate>Wed, 04 Apr 2018 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 May 2019 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,14 @@
             <link>https://isoblue.org/blog</link>
         </image>
         <copyright>Copyright © 2019Open Agricultural Systems Group</copyright>
+        <item>
+            <title><![CDATA[Embrace Yourself]]></title>
+            <link>https://isoblue.org/blog/2019/05/16/isobluehd.html</link>
+            <guid>https://isoblue.org/blog/2019/05/16/isobluehd.html</guid>
+            <pubDate>Thu, 16 May 2019 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><strong>Embrace yourself, ISOBlue HD is coming.</strong></p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[DPAC Experiment]]></title>
             <link>https://isoblue.org/blog/2018/04/04/dpac.html</link>
