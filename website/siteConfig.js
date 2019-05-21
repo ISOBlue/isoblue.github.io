@@ -23,7 +23,7 @@ const users = [
 
 const siteConfig = {
   title: 'ISOBlue 2.0' /* title for your website */,
-  tagline: 'Free the Ag Machinery Data',
+  tagline: 'Freeing Ag Machinery Data',
   url: 'https://isoblue.org' /* your website url */,
   baseUrl: '/' /* base url for your project */,
 	cname: 'www.isoblue.org',
@@ -51,9 +51,10 @@ const siteConfig = {
     'Open Agricultural Systems Group',
   organizationName: 'ISOBlue', // or set an env variable ORGANIZATION_NAME
   projectName: 'isoblue.github.io', // or set an env variable PROJECT_NAME
+  onPageNav: 'separate',
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
-    theme: 'default',
+    theme: 'atom-one-dark',
   },
   scripts: ['https://buttons.github.io/buttons.js'],
   // You may provide arbitrary config keys to be used as needed by your template.
