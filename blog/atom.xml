@@ -2,12 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://isoblue.org/blog</id>
     <title>ISOBlue 2.0 Blog</title>
-    <updated>2019-05-16T06:00:00Z</updated>
+    <updated>2019-05-21T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://isoblue.org/blog"/>
     <subtitle>The best place to stay up-to-date with the latest ISOBlue 2.0 news and events.</subtitle>
     <logo>https://isoblue.org/img/oats_logo.png</logo>
     <rights>Copyright © 2019Open Agricultural Systems Group</rights>
+    <entry>
+        <title type="html"><![CDATA[ISOBlue 2.0 Explained (Part 1): CAN Logging]]></title>
+        <id>https://isoblue.org/blog/2019/05/21/can-logging.html</id>
+        <link href="https://isoblue.org/blog/2019/05/21/can-logging.html">
+        </link>
+        <updated>2019-05-21T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>The CAN data logging on ISOBlue 2.0s' is fully automatic. Machine operators need
+to install ISOBlues once and these little boxes will take care of the logging of
+CAN streams coming from the tractor and the implement busses. No human
+intervention needed.</p>
+<p>How does everything work under the hood?</p>
+]]></summary>
+        <author>
+            <name>Yang Wang</name>
+            <uri>https://github.com/wang701</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Embrace Yourself]]></title>
         <id>https://isoblue.org/blog/2019/05/16/isobluehd.html</id>
