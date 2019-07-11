@@ -120,7 +120,7 @@ const Features = props => (
       {
         content:
 					`With your favorite ag machinery connected, you can view your
-					machine status on [where-is-my-isoblue](http://wheres-my-isoblue.oatsgroup.org/)
+					machine status on the [ISOblue App](https://openatk.com/ISOBlueApp/)
 					and visualize real-time as-harvested data on
 					[TrialsTracker](https://github.com/OpenATK/TrialsTracker).`,
         image: imgUrl('connected.png'),
