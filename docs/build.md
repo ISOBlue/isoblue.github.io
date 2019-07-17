@@ -45,7 +45,7 @@ You need to simply do:
 ```
 mkdir isoblue-core
 cd isoblue-core
-repo init -u https://github.com/ISOBlue/isoblue-image -b master
+repo init -u https://github.com/ISOBlue/isoblue-image -b v2.7
 repo sync
 ```
 After getting the ISOBlue image source, you can do:
