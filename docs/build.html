@@ -66,7 +66,7 @@ Linux, you can still download a <a href="https://drive.google.com/open?id=0B6AeE
 <p>For building an ISOBlue image, a powerful, multi-core host machine is highly
 recommended. There should be a minimum of 60GB of free disk place, 4GB of RAM
 and a decent Internet connection. The build procedure is currently only tested
-on Ubuntu 16.10.</p>
+on Ubuntu 16.10 using the Bash shell.</p>
 <!--truncate-->
 <h3><a class="anchor" aria-hidden="true" id="preparations"></a><a href="#preparations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Preparations</h3>
 <p>ISOBlue's image (which added a bunch of custom recipes on top of Toradex BSP)
@@ -74,16 +74,16 @@ build requires some additional packages, mainly 32-bit flashing utilities. You
 need to do:</p>
 <pre><code class="hljs">sudo dpkg --add-architecture i386
 sudo apt-<span class="hljs-keyword">get</span> update
-sudo apt-<span class="hljs-keyword">get</span> install g++<span class="hljs-number">-5</span>-multilib
-sudo apt-<span class="hljs-keyword">get</span> install curl dosfstools gawk g++-multilib gcc-multilib lib32z1-dev \
+sudo apt-<span class="hljs-keyword">get</span> install -y g++<span class="hljs-number">-5</span>-multilib
+sudo apt-<span class="hljs-keyword">get</span> install -y curl dosfstools gawk g++-multilib gcc-multilib lib32z1-dev \
 libcrypto++<span class="hljs-number">9</span>v5:i386 libcrypto++-dev:i386 liblzo2-dev:i386 lzop libsdl1<span class="hljs-number">.2</span>-dev \
 libstdc++<span class="hljs-number">-5</span>-dev:i386 libusb<span class="hljs-number">-1.0</span><span class="hljs-number">-0</span>:i386 libusb<span class="hljs-number">-1.0</span><span class="hljs-number">-0</span>-dev:i386 uuid-dev:i386 \
-texinfo chrpath
+texinfo chrpath diffstat
 
 cd /usr/lib; sudo ln -s libcrypto++.so<span class="hljs-number">.9</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span> libcryptopp.so<span class="hljs-number">.6</span>
 </code></pre>
 <p>We would also need to install <a href="https://source.android.com/setup/using-repo">repo</a> for source synchronizations:</p>
-<pre><code class="hljs">sudo apt-<span class="hljs-builtin-name">get</span> install repo
+<pre><code class="hljs">sudo apt-<span class="hljs-builtin-name">get</span> -y install repo
 </code></pre>
 <h3><a class="anchor" aria-hidden="true" id="source-synchronization"></a><a href="#source-synchronization" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Source Synchronization</h3>
 <p>You need to simply do:</p>
@@ -93,7 +93,8 @@ repo init -<span class="hljs-keyword">u</span> http<span class="hljs-variable">s
 repo <span class="hljs-keyword">sync</span>
 </code></pre>
 <p>After getting the ISOBlue image source, you can do:</p>
-<pre><code class="hljs">. <span class="hljs-builtin-name">export</span>
+<pre><code class="hljs">chmod u+w isoblue.conf
+<span class="hljs-built_in">source</span> <span class="hljs-built_in">export</span>
 </code></pre>
 <p>After sourcing <code>export</code>, you will be put into the <code>build</code> directory with the
 following items configured for the <strong>current</strong> session:</p>
