@@ -5,14 +5,14 @@
         <link>https://isoblue.org/blog</link>
         <description>The best place to stay up-to-date with the latest ISOBlue 2.0 news and events.</description>
         <lastBuildDate>Tue, 21 May 2019 06:00:00 GMT</lastBuildDate>
-        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
-        <generator>Feed for Node.js</generator>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
         <image>
             <title>ISOBlue 2.0 Blog</title>
             <url>https://isoblue.org/img/oats_logo.png</url>
             <link>https://isoblue.org/blog</link>
         </image>
-        <copyright>Copyright © 2019Open Agricultural Systems Group</copyright>
+        <copyright>Copyright © 2020Open Agricultural Systems Group</copyright>
         <item>
             <title><![CDATA[ISOBlue 2.0 Explained (Part 1): CAN Logging]]></title>
             <link>https://isoblue.org/blog/2019/05/21/can-logging.html</link>
