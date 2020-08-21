@@ -19,7 +19,7 @@ module.
 
 ## Preparing a Flashable SD Card
 
-After you follow through the [building instructions](building.md) or download
+After you follow through the [building instructions](build.md) or download
 the [prebuilt ISOBlue image][2], you should have an image tar ball. You would
 need to extract the tar ball content:
 ```shell
