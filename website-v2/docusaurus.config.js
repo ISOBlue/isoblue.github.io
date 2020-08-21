@@ -99,13 +99,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/ISOBlue/isoblue.github.io/edit/master/v2-website/',
+            'https://github.com/ISOBlue/isoblue.github.io/edit/source/website-v2/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/ISOBlue/isoblue.github.io/edit/master/v2-website/blog',
+            'https://github.com/ISOBlue/isoblue.github.io/edit/source/website-v2/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
