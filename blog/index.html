@@ -1,78 +1,55 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Blog · ISOBlue 2.0</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Freeing Ag Machinery Data"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Blog · ISOBlue 2.0"/><meta property="og:type" content="website"/><meta property="og:url" content="https://isoblue.org/index.html"/><meta property="og:description" content="Freeing Ag Machinery Data"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://isoblue.org/blog/atom.xml" title="ISOBlue 2.0 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://isoblue.org/blog/feed.xml" title="ISOBlue 2.0 Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="blog"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/oats_logo.png" alt="ISOBlue 2.0"/><h2 class="headerTitleWithLogo">ISOBlue 2.0</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/bom.html" target="_self">Docs</a></li><li class="siteNavGroupActive siteNavItemActive"><a href="/blog/" target="_self">Blog</a></li><li class=""><a href="https://github.com/ISOBlue" target="_self">Github</a></li><li class=""><a href="https://groups.google.com/forum/?fromgroups#!forum/isoblue" target="_self">Mailing List</a></li><li class=""><a href="/help.html" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Recent Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/blog/2019/05/21/can-logging.html">ISOBlue 2.0 Explained (Part 1): CAN Logging</a></li><li class="navListItem"><a class="navItem" href="/blog/2019/05/16/isobluehd.html">Embrace Yourself</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/04/04/dpac.html">DPAC Experiment</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/02/19/antenna-issue.html">Houston, we have a problem</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/02/16/new-site.html">New ISOBlue Site</a></li></ul></div></div></section></div><script>
-            var coll = document.getElementsByClassName('collapsible');
-            var checkActiveCategory = true;
-            for (var i = 0; i < coll.length; i++) {
-              var links = coll[i].nextElementSibling.getElementsByTagName('*');
-              if (checkActiveCategory){
-                for (var j = 0; j < links.length; j++) {
-                  if (links[j].classList.contains('navListItemActive')){
-                    coll[i].nextElementSibling.classList.toggle('hide');
-                    coll[i].childNodes[1].classList.toggle('rotate');
-                    checkActiveCategory = false;
-                    break;
-                  }
-                }
-              }
-
-              coll[i].addEventListener('click', function() {
-                var arrow = this.childNodes[1];
-                arrow.classList.toggle('rotate');
-                var content = this.nextElementSibling;
-                content.classList.toggle('hide');
-              });
-            }
-
-            document.addEventListener('DOMContentLoaded', function() {
-              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
-              createToggler('#tocToggler', 'body', 'tocActive');
-
-              var headings = document.querySelector('.toc-headings');
-              headings && headings.addEventListener('click', function(event) {
-                var el = event.target;
-                while(el !== headings){
-                  if (el.tagName === 'A') {
-                    document.body.classList.remove('tocActive');
-                    break;
-                  } else{
-                    el = el.parentNode;
-                  }
-                }
-              }, false);
-
-              function createToggler(togglerSelector, targetSelector, className) {
-                var toggler = document.querySelector(togglerSelector);
-                var target = document.querySelector(targetSelector);
-
-                if (!toggler) {
-                  return;
-                }
-
-                toggler.onclick = function(event) {
-                  event.preventDefault();
-
-                  target.classList.toggle(className);
-                };
-              }
-            });
-        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="posts"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2019/05/21/can-logging.html">ISOBlue 2.0 Explained (Part 1): CAN Logging</a></h1><p class="post-meta">May 21, 2019</p><div class="authorBlock"><p class="post-authorName"><a href="https://github.com/wang701" target="_blank" rel="noreferrer noopener">Yang Wang</a></p></div></header><article class="post-content"><div><span><p>The CAN data logging on ISOBlue 2.0s' is fully automatic. Machine operators need
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="generator" content="Docusaurus v2.0.0-alpha.61">
+<title data-react-helmet="true">Blog | ISOBlue</title><meta data-react-helmet="true" property="og:title" content="Blog | ISOBlue"><meta data-react-helmet="true" name="description" content="Blog"><meta data-react-helmet="true" property="og:description" content="Blog"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link rel="stylesheet" href="/styles.6af30466.css">
+<link rel="preload" href="/styles.8c87156f.js" as="script">
+<link rel="preload" href="/runtime~main.04360556.js" as="script">
+<link rel="preload" href="/main.a345168d.js" as="script">
+<link rel="preload" href="/1.c1636144.js" as="script">
+<link rel="preload" href="/2.15781dc9.js" as="script">
+<link rel="preload" href="/3.f369f4cb.js" as="script">
+<link rel="preload" href="/a6aa9e1f.fc97bdc7.js" as="script">
+<link rel="preload" href="/3fdfae89.538ed565.js" as="script">
+<link rel="preload" href="/3d13b4d1.4eff3e35.js" as="script">
+<link rel="preload" href="/22089c15.2164ffc6.js" as="script">
+<link rel="preload" href="/c6aa88ae.964fd7d1.js" as="script">
+<link rel="preload" href="/df036113.a959a85c.js" as="script">
+<link rel="preload" href="/4c6ae9a4.024bbaf8.js" as="script">
+<link rel="preload" href="/bbb4ffb5.54198fe1.js" as="script">
+</head>
+<body>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
+<nav class="navbar navbar--light navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a class="navbar__brand" href="/"><img class="navbar__logo" src="/img/logo.png" alt="isoblue-logo"><strong class="navbar__title">ISOBlue</strong></a><a class="navbar__item navbar__link" href="/docs/">Docs</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/blog/">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/OATS-Group/isoblue-avena" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub</a><a href="https://groups.google.com/g/isoblue" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Google Group</a><div class="react-toggle react-toggle--disabled displayOnlyInLargeViewport_2aTZ"><div class="react-toggle-track"><div class="react-toggle-track-check"><span class="toggle_BsTx">🌜</span></div><div class="react-toggle-track-x"><span class="toggle_BsTx">🌞</span></div></div><div class="react-toggle-thumb"></div><input type="checkbox" disabled="" aria-label="Dark mode toggle" class="react-toggle-screenreader-only"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a class="navbar__brand" href="/"><img class="navbar__logo" src="/img/logo.png" alt="isoblue-logo"><strong class="navbar__title">ISOBlue</strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/docs/">Docs</a></li><li class="menu__list-item"><a aria-current="page" class="menu__link navbar__link--active" href="/blog/">Blog</a></li><li class="menu__list-item"><a href="https://github.com/OATS-Group/isoblue-avena" target="_blank" rel="noopener noreferrer" class="menu__link">GitHub</a></li><li class="menu__list-item"><a href="https://groups.google.com/g/isoblue" target="_blank" rel="noopener noreferrer" class="menu__link">Google Group</a></li></ul></div></div></div></nav><div class="main-wrapper"><div class="container margin-vert--lg"><div class="row"><main class="col col--8 col--offset-2"><article class="margin-bottom--xl"><header><h2 class="margin-bottom--sm blogPostTitle_1mse"><a href="/blog/2019/05/21/can-logging">ISOBlue 2.0 Explained (Part 1): CAN Logging</a></h2><div class="margin-vert--md"><time datetime="2019-05-21T00:00:00.000Z" class="blogPostDate_3bQP">May 21, 2019  · 5 min read</time></div><div class="avatar margin-vert--md"><div class="avatar__intro"><h4 class="avatar__name"><a href="https://github.com/wang701" target="_blank" rel="noreferrer noopener">Yang Wang</a></h4><small class="avatar__subtitle"></small></div></div></header><section class="markdown"><p>The CAN data logging on ISOBlue 2.0s&#x27; is fully automatic. Machine operators need
 to install ISOBlues once and these little boxes will take care of the logging of
 CAN streams coming from the tractor and the implement busses. No human
-intervention needed.</p>
-<p>How does everything work under the hood?</p>
-</span></div><div class="read-more"><a class="button" href="/blog/2019/05/21/can-logging.html">Read More</a></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2019/05/16/isobluehd.html">Embrace Yourself</a></h1><p class="post-meta">May 16, 2019</p><div class="authorBlock"><p class="post-authorName"><a href="https://github.com/wang701" target="_blank" rel="noreferrer noopener">Yang Wang</a></p></div></header><article class="post-content"><div><span><p><strong>Embrace yourself, ISOBlue HD is coming.</strong></p>
-</span></div><div class="read-more"><a class="button" href="/blog/2019/05/16/isobluehd.html">Read More</a></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2018/04/04/dpac.html">DPAC Experiment</a></h1><p class="post-meta">April 4, 2018</p><div class="authorBlock"><p class="post-authorName"><a href="https://github.com/wang701" target="_blank" rel="noreferrer noopener">Yang Wang</a></p></div></header><article class="post-content"><div><span><p>On a rather cold, chilly, and windy April afternoon, I drove to [Davis Purdue
+intervention needed.</p><p>How does everything work under the hood?</p></section><footer class="row margin-vert--lg"><div class="col text--right"><a aria-label="Read more about ISOBlue 2.0 Explained (Part 1): CAN Logging" href="/blog/2019/05/21/can-logging"><strong>Read More</strong></a></div></footer></article><article class="margin-bottom--xl"><header><h2 class="margin-bottom--sm blogPostTitle_1mse"><a href="/blog/2019/05/16/isobluehd">Embrace Yourself</a></h2><div class="margin-vert--md"><time datetime="2019-05-16T00:00:00.000Z" class="blogPostDate_3bQP">May 16, 2019  · 3 min read</time></div><div class="avatar margin-vert--md"><div class="avatar__intro"><h4 class="avatar__name"><a href="https://github.com/wang701" target="_blank" rel="noreferrer noopener">Yang Wang</a></h4><small class="avatar__subtitle"></small></div></div></header><section class="markdown"><p><strong>Embrace yourself, ISOBlue HD is coming.</strong></p></section><footer class="row margin-vert--lg"><div class="col text--right"><a aria-label="Read more about Embrace Yourself" href="/blog/2019/05/16/isobluehd"><strong>Read More</strong></a></div></footer></article><article class="margin-bottom--xl"><header><h2 class="margin-bottom--sm blogPostTitle_1mse"><a href="/blog/2018/04/04/dpac">DPAC Experiment</a></h2><div class="margin-vert--md"><time datetime="2018-04-04T00:00:00.000Z" class="blogPostDate_3bQP">April 4, 2018  · 2 min read</time></div><div class="avatar margin-vert--md"><div class="avatar__intro"><h4 class="avatar__name"><a href="https://github.com/wang701" target="_blank" rel="noreferrer noopener">Yang Wang</a></h4><small class="avatar__subtitle"></small></div></div></header><section class="markdown"><p>On a rather cold, chilly, and windy April afternoon, I drove to [Davis Purdue
 Agricultural Center (DPAC)][1] along with my colleague, Matt to collect some
-machine data.</p>
-</span></div><div class="read-more"><a class="button" href="/blog/2018/04/04/dpac.html">Read More</a></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2018/02/19/antenna-issue.html">Houston, we have a problem</a></h1><p class="post-meta">February 19, 2018</p><div class="authorBlock"><p class="post-authorName"><a href="https://github.com/wang701" target="_blank" rel="noreferrer noopener">Yang Wang</a></p></div></header><article class="post-content"><div><span><p>We have built 5 ISOBlue 2.0s and they are up and running when they need to.
+machine data.</p></section><footer class="row margin-vert--lg"><div class="col text--right"><a aria-label="Read more about DPAC Experiment" href="/blog/2018/04/04/dpac"><strong>Read More</strong></a></div></footer></article><article class="margin-bottom--xl"><header><h2 class="margin-bottom--sm blogPostTitle_1mse"><a href="/blog/2018/02/19/antenna-issue">Houston, we have a problem</a></h2><div class="margin-vert--md"><time datetime="2018-02-19T00:00:00.000Z" class="blogPostDate_3bQP">February 19, 2018  · 2 min read</time></div><div class="avatar margin-vert--md"><div class="avatar__intro"><h4 class="avatar__name"><a href="https://github.com/wang701" target="_blank" rel="noreferrer noopener">Yang Wang</a></h4><small class="avatar__subtitle"></small></div></div></header><section class="markdown"><p>We have built 5 ISOBlue 2.0s and they are up and running when they need to.
 Since we are not necessarily product design or mechanical design experts, we
 try our best to fit ISOBlue inside a weatherproof enclosure with all the
-connectors and antennas sticking out.</p>
-</span></div><div class="read-more"><a class="button" href="/blog/2018/02/19/antenna-issue.html">Read More</a></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2018/02/16/new-site.html">New ISOBlue Site</a></h1><p class="post-meta">February 16, 2018</p><div class="authorBlock"><p class="post-authorName"><a href="https://github.com/wang701" target="_blank" rel="noreferrer noopener">Yang Wang</a></p></div></header><article class="post-content"><div><span><p>As you could see, we have made some renovations to the ISOBlue website. Projects
+connectors and antennas sticking out.</p></section><footer class="row margin-vert--lg"><div class="col text--right"><a aria-label="Read more about Houston, we have a problem" href="/blog/2018/02/19/antenna-issue"><strong>Read More</strong></a></div></footer></article><article class="margin-bottom--xl"><header><h2 class="margin-bottom--sm blogPostTitle_1mse"><a href="/blog/2018/02/16/new-site">New ISOBlue Site</a></h2><div class="margin-vert--md"><time datetime="2018-02-16T00:00:00.000Z" class="blogPostDate_3bQP">February 16, 2018  · 1 min read</time></div><div class="avatar margin-vert--md"><div class="avatar__intro"><h4 class="avatar__name"><a href="https://github.com/wang701" target="_blank" rel="noreferrer noopener">Yang Wang</a></h4><small class="avatar__subtitle"></small></div></div></header><section class="markdown"><p>As you could see, we have made some renovations to the ISOBlue website. Projects
 like ISOBlue is constantly changing and adapting to the newest and hotest
 trends in open-source community in terms of Cloud architecture tools, build
 tools, hardware, etc. It will be helpful for both you and us to get informed
-with the latest status of ISOBlue.</p>
-</span></div><div class="read-more"><a class="button" href="/blog/2018/02/16/new-site.html">Read More</a></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2016/04/14/CANdroid-manure.html">CANdroid During a Manure Spreading Session</a></h1><p class="post-meta">April 14, 2016</p><div class="authorBlock"><p class="post-authorName"><a href="https://github.com/wang701" target="_blank" rel="noreferrer noopener">Yang Wang</a></p></div></header><article class="post-content"><div><span><p>We utilized CANdroid to collect ISOBUS data during a manure spreading session.
+with the latest status of ISOBlue.</p></section><footer class="row margin-vert--lg"><div class="col text--right"><a aria-label="Read more about New ISOBlue Site" href="/blog/2018/02/16/new-site"><strong>Read More</strong></a></div></footer></article><article class="margin-bottom--xl"><header><h2 class="margin-bottom--sm blogPostTitle_1mse"><a href="/blog/2016/04/14/CANdroid-manure">CANdroid During a Manure Spreading Session</a></h2><div class="margin-vert--md"><time datetime="2016-04-14T00:00:00.000Z" class="blogPostDate_3bQP">April 14, 2016  · 1 min read</time></div><div class="avatar margin-vert--md"><div class="avatar__intro"><h4 class="avatar__name"><a href="https://github.com/wang701" target="_blank" rel="noreferrer noopener">Yang Wang</a></h4><small class="avatar__subtitle"></small></div></div></header><section class="markdown"><p>We utilized CANdroid to collect ISOBUS data during a manure spreading session.
 The session lasted for about 2 hours with a total of 6 passes of manure
-spreading in the field.</p>
-</span></div><div class="read-more"><a class="button" href="/blog/2016/04/14/CANdroid-manure.html">Read More</a></div></article></div><div class="docs-prevnext"></div></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/docusaurus.svg" alt="ISOBlue 2.0" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/howitworks.html">How it Works?</a><a href="/docs/bom.html">Bill of Materials</a><a href="/docs/build.html">Software Build Instructions</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="https://groups.google.com/forum/?fromgroups#!forum/isoblue">Mailing List</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" href="https://github.com/ISOBlue/" data-icon="octicon-star" data-count-href="/ISOBlue/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://engineering.purdue.edu/oatsgroup/" target="_blank" class="fbOpenSource"><img src="/img/oats_logo.png" alt="OATS" width="170" height="45"/></a></footer></div></body></html>
+spreading in the field.</p></section><footer class="row margin-vert--lg"><div class="col text--right"><a aria-label="Read more about CANdroid During a Manure Spreading Session" href="/blog/2016/04/14/CANdroid-manure"><strong>Read More</strong></a></div></footer></article><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></main></div></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs">Overview</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/hw/bom">Hardware</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/sw/swbuild">Software</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a href="https://groups.google.com/g/isoblue" target="_blank" rel="noopener noreferrer" class="footer__link-item">Google Group</a></li><li class="footer__item"><a href="https://github.com/OATS-Group/isoblue-avena/issues" target="_blank" rel="noopener noreferrer" class="footer__link-item">Issue Tracker</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">More</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/OATS-Group/isoblue-avena" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 Open Ag Systems and Technology Center, Purdue University. Built with Docusaurus.</div></div></div></footer></div>
+<script src="/styles.8c87156f.js"></script>
+<script src="/runtime~main.04360556.js"></script>
+<script src="/main.a345168d.js"></script>
+<script src="/1.c1636144.js"></script>
+<script src="/2.15781dc9.js"></script>
+<script src="/3.f369f4cb.js"></script>
+<script src="/a6aa9e1f.fc97bdc7.js"></script>
+<script src="/3fdfae89.538ed565.js"></script>
+<script src="/3d13b4d1.4eff3e35.js"></script>
+<script src="/22089c15.2164ffc6.js"></script>
+<script src="/c6aa88ae.964fd7d1.js"></script>
+<script src="/df036113.a959a85c.js"></script>
+<script src="/4c6ae9a4.024bbaf8.js"></script>
+<script src="/bbb4ffb5.54198fe1.js"></script>
+</body>
+</html>
